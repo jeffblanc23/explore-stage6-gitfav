@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --text-color: #E1E1E6;
+
+    --bg-color: #000;
+
+    --hue: 194;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    padding: 2rem;
+    max-width: 112rem;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 11.5rem;
+    margin-bottom: 8.7rem;
+}
+
+header h1 {
+    height: 4.8rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    background-color: #06181C;
+    color: #7C7C8A;
+    height: 4.8rem;
+    width: 46.2rem;
+    border: 1px solid #ccc;
+    border-radius: .4rem 0 0 .4rem;
+    padding: 0 .8rem;
+}
+
+.search button {
+    background-color: #065E7C;
+    color: #FFFF;
+    font-weight: 700;
+    border-radius: 0 .4rem .4rem 0;
+    height: 4.8rem;
+    border: none;
+    padding: 1.2rem 3.2rem;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+
+.search button:hover,
+.search button svg path:hover {
+    filter: brightness(1.1);
+    background-color: #FFFF;
+    color: #065E7C;
+    fill: #065E7C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, .3);
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background: #06181C;
+    text-align: left;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr {
+    border: 1px solid #4A808C;
+
+}
+table tr:nth-child(even) {
+    background: #06181C;
+}
+
+table tr:nth-child(odd) {
+    background: rgba(6, 22, 27, 0.50);
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: #F75A68;
+
+    cursor: pointer;
+}
+
+.empty {
+    background-color: #030B0D;
+    max-width: 112rem;
+    height: 62.4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+}
+
+.empty h2 {
+    color: #4E5455;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
